@@ -7,6 +7,8 @@
 
 import { StaticQuery, graphql } from "gatsby"
 
+import Copyright from "./copyright"
+import Footer from "./footer"
 import Header from "./header"
 import PropTypes from "prop-types"
 import React from "react"
@@ -26,6 +28,8 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         {children}
+        <Footer />
+        <Copyright />
       </>
     )}
   />
